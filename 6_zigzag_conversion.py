@@ -14,4 +14,4 @@ class Solution:
                 if 0 < i < numRows - 1 and j + t - i < len(s):
                     ans.append(s[j + t - i])
 
-        return ''.join(ans)
+        return "".join(ans)

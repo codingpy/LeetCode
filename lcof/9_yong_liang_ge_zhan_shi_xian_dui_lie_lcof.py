@@ -1,5 +1,4 @@
 class CQueue:
-
     def __init__(self):
         self.st1 = []
         self.st2 = []

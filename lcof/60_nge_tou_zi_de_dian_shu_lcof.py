@@ -7,4 +7,4 @@ class Solution:
                 for k in range(1, 6):
                     dp[j + k] += dp[j]
 
-        return [x / 6 ** n for x in dp]
+        return [x / 6**n for x in dp]

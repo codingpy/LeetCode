@@ -1,5 +1,5 @@
 class Solution:
-    def treeToDoublyList(self, root: 'Node') -> 'Node':
+    def treeToDoublyList(self, root: "Node") -> "Node":
         if root:
             li = inorder(root)
 
@@ -11,5 +11,5 @@ class Solution:
             return li[0]
 
 
-def inorder(root: 'Optional[Node]') -> 'List[Node]':
+def inorder(root: "Optional[Node]") -> "List[Node]":
     return inorder(root.left) + [root] + inorder(root.right) if root else []

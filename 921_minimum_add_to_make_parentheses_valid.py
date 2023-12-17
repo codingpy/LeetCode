@@ -4,7 +4,7 @@ class Solution:
         right = 0
 
         for c in s:
-            if c == '(':
+            if c == "(":
                 left += 1
             elif left > 0:
                 left -= 1

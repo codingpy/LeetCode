@@ -2,7 +2,7 @@ class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         profit = 0
 
-        cost = float('inf')
+        cost = float("inf")
 
         for price in prices:
             profit = max(profit, price - cost)

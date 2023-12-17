@@ -10,9 +10,8 @@ class Solution:
 # Places the kth smallest element in the kth position
 # Because arrays start at 0, this will be index k-1
 
-def qselect(
-        a: List[int], k: int, left: int, right: int, cutoff: int = 3
-) -> None:
+
+def qselect(a: List[int], k: int, left: int, right: int, cutoff: int = 3) -> None:
     if left + cutoff <= right:
         pivot = median3(a, left, right)
 
@@ -52,6 +51,7 @@ def qselect(
 
 # Return median of Left, Center, and Right
 # Order these and hide the pivot
+
 
 def median3(a: List[int], left: int, right: int) -> int:
     center = (left + right) // 2

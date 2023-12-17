@@ -7,7 +7,7 @@ class Solution:
         s = sorted(s)
 
         while True:
-            ans.append(''.join(s))
+            ans.append("".join(s))
 
             if not next_permutation(s):
                 return ans

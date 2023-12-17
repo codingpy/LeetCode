@@ -1,6 +1,6 @@
 class Solution:
     def verifyPostorder(self, postorder: List[int]) -> bool:
-        root = float('inf')
+        root = float("inf")
 
         st = []
 

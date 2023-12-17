@@ -17,4 +17,4 @@ class Solution:
         reverse(n, m - 1)
         reverse(0, m - 1)
 
-        return ''.join(s)
+        return "".join(s)

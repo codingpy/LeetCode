@@ -1,6 +1,6 @@
-INT_MIN, INT_MAX = -2 ** 31, 2 ** 31 - 1
+INT_MIN, INT_MAX = -(2**31), 2**31 - 1
 
-UINT_MAX = 2 ** 32 - 1
+UINT_MAX = 2**32 - 1
 
 
 class Solution:
@@ -13,7 +13,7 @@ def atoi(s: str) -> int:
 
     # skip white space
 
-    while i < len(s) and s[i] == ' ':
+    while i < len(s) and s[i] == " ":
         i += 1
 
     # check for a sign
@@ -21,11 +21,11 @@ def atoi(s: str) -> int:
     negative = False
 
     if i < len(s):
-        if s[i] == '-':
+        if s[i] == "-":
             negative = True
 
             i += 1
-        elif s[i] == '+':
+        elif s[i] == "+":
             i += 1
 
     # avoid runtime division
@@ -36,8 +36,8 @@ def atoi(s: str) -> int:
 
     j = 0
 
-    while i < len(s) and '0' <= s[i] <= '9':
-        c = ord(s[i]) - ord('0')
+    while i < len(s) and "0" <= s[i] <= "9":
+        c = ord(s[i]) - ord("0")
 
         # check for overflow
 

@@ -2,7 +2,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
         st = []
 
-        dic = {')': '(', '}': '{', ']': '['}
+        dic = {")": "(", "}": "{", "]": "["}
 
         for c in s:
             if c in dic:

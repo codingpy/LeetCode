@@ -1,4 +1,4 @@
-INT_MIN, INT_MAX = -2 ** 31, 2 ** 31 - 1
+INT_MIN, INT_MAX = -(2**31), 2**31 - 1
 
 
 class Solution:

@@ -11,20 +11,20 @@ class Solution:
         n = len(equation)
 
         while j < n + 1:
-            c = ''
+            c = ""
 
             if j < n:
                 c = equation[j]
 
-            if c in ['+', '-', '=', '']:
+            if c in ["+", "-", "=", ""]:
                 item = equation[i:j]
 
-                if item[-1] == 'x':
+                if item[-1] == "x":
                     item = item[:-1]
 
-                    if item == '+' or item == '':
+                    if item == "+" or item == "":
                         item = 1
-                    elif item == '-':
+                    elif item == "-":
                         item = -1
 
                     x += s * int(item)
@@ -33,7 +33,7 @@ class Solution:
 
                 i = j
 
-                if c == '=':
+                if c == "=":
                     i += 1
                     j += 1
 
@@ -42,6 +42,6 @@ class Solution:
             j += 1
 
         if x:
-            return f'x={-b // x}'
+            return f"x={-b // x}"
 
-        return 'No solution' if b else 'Infinite solutions'
+        return "No solution" if b else "Infinite solutions"

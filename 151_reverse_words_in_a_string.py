@@ -11,10 +11,10 @@ class Solution:
         i = 0
 
         for j in range(n):
-            if s[j] != ' ':
+            if s[j] != " ":
                 if i > 0:
-                    if s[j - 1] == ' ':
-                        s[i] = ' '
+                    if s[j - 1] == " ":
+                        s[i] = " "
 
                         i += 1
 
@@ -40,10 +40,10 @@ class Solution:
         i = 0
 
         for j in range(n):
-            if s[j] != ' ':
-                if j + 1 == n or s[j + 1] == ' ':
+            if s[j] != " ":
+                if j + 1 == n or s[j + 1] == " ":
                     reverse(i, j)
             else:
                 i = j + 1
 
-        return ''.join(s)
+        return "".join(s)

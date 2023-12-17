@@ -31,7 +31,7 @@ def color(G):
             if v not in dic:
                 dfs(v, 1 - c)
             elif dic[v] == c:
-                raise ValueError('Graph is not bipartite.')
+                raise ValueError("Graph is not bipartite.")
 
     for u in G:
         if u not in dic:

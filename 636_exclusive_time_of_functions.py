@@ -27,6 +27,6 @@ class Solution:
 
 
 def parse(log: str) -> Tuple[int, bool, int]:
-    func_id, state, timestamp = log.split(':')
+    func_id, state, timestamp = log.split(":")
 
-    return int(func_id), state == 'start', int(timestamp)
+    return int(func_id), state == "start", int(timestamp)

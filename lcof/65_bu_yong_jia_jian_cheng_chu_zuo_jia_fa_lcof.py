@@ -1,4 +1,4 @@
-UINT_MAX = 0xffffffff  # 2 ** 32 - 1
+UINT_MAX = 0xFFFFFFFF  # 2 ** 32 - 1
 
 
 class Solution:

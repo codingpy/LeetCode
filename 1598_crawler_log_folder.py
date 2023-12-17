@@ -3,9 +3,9 @@ class Solution:
         ans = 0
 
         for log in logs:
-            if log == '../':
+            if log == "../":
                 ans = max(ans - 1, 0)
-            elif log != './':
+            elif log != "./":
                 ans += 1
 
         return ans

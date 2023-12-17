@@ -6,7 +6,7 @@ class Solution:
 
         def backtrack(i: int) -> None:
             if i == len(s):
-                ans.append(''.join(s))
+                ans.append("".join(s))
 
                 return
 

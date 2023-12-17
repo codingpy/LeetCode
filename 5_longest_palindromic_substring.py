@@ -10,9 +10,7 @@ class Solution:
             return j - i - 1
 
         for center in range(len(s)):
-            maxlen = max(
-                expand(center, center), expand(center - 1, center)
-            )
+            maxlen = max(expand(center, center), expand(center - 1, center))
 
             if j - i < maxlen:
                 i, j = center - maxlen // 2, center + (maxlen + 1) // 2

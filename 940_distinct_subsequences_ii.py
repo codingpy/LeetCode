@@ -3,6 +3,6 @@ class Solution:
         dp = [0] * 26
 
         for c in s:
-            dp[ord(c) - ord('a')] = sum(dp) + 1
+            dp[ord(c) - ord("a")] = sum(dp) + 1
 
         return sum(dp) % 1_000_000_007

@@ -5,12 +5,12 @@ class Solution:
         left = 0
 
         for i, c in enumerate(s):
-            if c == '(':
+            if c == "(":
                 left += 1
             else:
                 left -= 1
 
-                if s[i - 1] == '(':
+                if s[i - 1] == "(":
                     ans += 1 << left
 
         return ans

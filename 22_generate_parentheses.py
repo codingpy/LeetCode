@@ -4,17 +4,17 @@ class Solution:
 
         def backtrack(s: List[str], left: int, right: int) -> None:
             if len(s) == 2 * n:
-                ans.append(''.join(s))
+                ans.append("".join(s))
             else:
                 if left < n:
-                    s.append('(')
+                    s.append("(")
 
                     backtrack(s, left + 1, right)
 
                     s.pop()
 
                 if right < left:
-                    s.append(')')
+                    s.append(")")
 
                     backtrack(s, left, right + 1)
 

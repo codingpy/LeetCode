@@ -1,7 +1,7 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if not strs:
-            return ''
+            return ""
 
         s1 = min(strs)
         s2 = max(strs)

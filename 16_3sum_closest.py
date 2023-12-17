@@ -1,6 +1,6 @@
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
-        ans = float('inf')
+        ans = float("inf")
 
         nums.sort()
 

@@ -10,13 +10,7 @@ class Solution:
             if 0 <= i < n and 0 <= j < n and grid[i][j] == 1:
                 grid[i][j] = k
 
-                return (
-                    1
-                    + dfs(i - 1, j)
-                    + dfs(i + 1, j)
-                    + dfs(i, j - 1)
-                    + dfs(i, j + 1)
-                )
+                return 1 + dfs(i - 1, j) + dfs(i + 1, j) + dfs(i, j - 1) + dfs(i, j + 1)
 
             return 0
 
@@ -38,12 +32,7 @@ class Solution:
                 if grid[i][j] == 0:
                     islands = set()
 
-                    for i, j in [
-                            (i - 1, j),
-                            (i + 1, j),
-                            (i, j - 1),
-                            (i, j + 1),
-                    ]:
+                    for i, j in [(i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1)]:
                         if 0 <= i < n and 0 <= j < n:
                             k = grid[i][j]
 

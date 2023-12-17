@@ -1,6 +1,5 @@
-from itertools import accumulate
-
 from collections import deque
+from itertools import accumulate
 
 
 class Solution:

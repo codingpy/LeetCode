@@ -1,10 +1,11 @@
-from collections import defaultdict
-
 from bisect import bisect
+from collections import defaultdict
 
 
 class Solution:
-    def busyStudent(self, startTime: List[int], endTime: List[int], queryTime: int) -> int:
+    def busyStudent(
+        self, startTime: List[int], endTime: List[int], queryTime: int
+    ) -> int:
         # return sum(a <= queryTime <= b for a, b in zip(startTime, endTime))
 
         diff = defaultdict(int)

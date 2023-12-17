@@ -12,8 +12,6 @@ class Solution:
 
 def dfs(A: Optional[TreeNode], B: Optional[TreeNode]) -> bool:
     if A and B:
-        return (
-            A.val == B.val and dfs(A.left, B.left) and dfs(A.right, B.right)
-        )
+        return A.val == B.val and dfs(A.left, B.left) and dfs(A.right, B.right)
 
     return not B

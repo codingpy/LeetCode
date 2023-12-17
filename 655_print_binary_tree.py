@@ -4,9 +4,9 @@ class Solution:
 
         m = height + 1
 
-        n = 2 ** m - 1
+        n = 2**m - 1
 
-        res = [[''] * n for _ in range(m)]
+        res = [[""] * n for _ in range(m)]
 
         def dfs(root: Optional[TreeNode], r: int, c: int) -> None:  # noqa
             if root:

@@ -3,7 +3,7 @@ class Solution:
         bits = 0
 
         for c in astr:
-            bit = 1 << ord(c) - ord('a')
+            bit = 1 << ord(c) - ord("a")
 
             if bits & bit:
                 return False
