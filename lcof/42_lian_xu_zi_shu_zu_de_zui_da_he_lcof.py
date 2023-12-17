@@ -16,6 +16,6 @@ class Solution:
         # return ans
 
         for i in range(1, len(nums)):
-            nums[i] += max(nums[i - 1], 0)  # dp
+            nums[i] += max(nums[i - 1], 0)  # DP
 
         return max(nums)

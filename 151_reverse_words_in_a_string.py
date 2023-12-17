@@ -4,7 +4,7 @@ class Solution:
 
         s = list(s)
 
-        # reduce multiple spaces between two words to a single space
+        # Reduce multiple spaces between two words to a single space
 
         n = len(s)
 
@@ -24,7 +24,7 @@ class Solution:
 
         s = s[:i]
 
-        # reverse the order of the words
+        # Reverse the order of the words
 
         def reverse(i: int, j: int) -> None:
             while i < j:

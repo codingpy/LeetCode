@@ -3,7 +3,7 @@ class Solution:
         return int(sqrt(x))
 
 
-def sqrt(x: float, eps: float = 1e-7) -> float:  # newton
+def sqrt(x: float, eps: float = 1e-7) -> float:  # Newton
     if not x:
         return 0
 

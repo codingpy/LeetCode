@@ -16,5 +16,5 @@ class Solution:
         return n + 2
 
 
-def solve(a: float, b: float, c: float) -> float:  # quadratic
+def solve(a: float, b: float, c: float) -> float:  # Quadratic
     return (-b + math.sqrt(b * b - 4 * a * c)) / (2 * a)

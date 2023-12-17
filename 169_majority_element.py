@@ -6,7 +6,7 @@ class Solution:
 def mjrty(a: List[int]) -> Optional[int]:
     cand = 0
 
-    # pairing
+    # Pairing
 
     k = 0
 
@@ -25,7 +25,7 @@ def mjrty(a: List[int]) -> Optional[int]:
         if k > n // 2:
             return cand
 
-        # counting
+        # Counting
 
         k = 0
 

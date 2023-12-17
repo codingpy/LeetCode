@@ -5,4 +5,4 @@ class Solution:
                 if nums[i] == nums[nums[i]]:
                     return nums[i]
 
-                nums[nums[i]], nums[i] = nums[i], nums[nums[i]]  # swap
+                nums[nums[i]], nums[i] = nums[i], nums[nums[i]]  # Swap

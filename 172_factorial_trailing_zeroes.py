@@ -3,7 +3,7 @@ class Solution:
         return nu(n, 5)
 
 
-def nu(n: int, p: int) -> int:  # legendre
+def nu(n: int, p: int) -> int:  # Legendre
     ans = 0
 
     while n:
